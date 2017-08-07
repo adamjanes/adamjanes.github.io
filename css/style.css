@@ -1,0 +1,154 @@
+
+h1, h2{
+    text-align: center;
+}
+
+.form-control {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.picture{
+    width: 73px;
+    border-style:solid;
+    border-width:5px;
+    border-radius:50%;
+}
+
+.panel-body {
+    height: 170px;
+}
+
+/****************/
+/*  LINE CHART  */
+/****************/
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-size: 11px;
+}
+
+.line {
+    fill: none;
+    stroke: #1C9A3D;
+    stroke-width: 1.5px;
+}
+
+.tooltip-circle {
+    fill: #96AB96;
+}
+
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.d3-tip {
+    line-height: 1;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Tooltip */
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    display: inline;
+    padding: 6px;
+    font: 13px sans-serif;
+    background-color: #000;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    color: #fff;
+}
+
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+.dot {
+    r:5;
+    fill:grey;
+}
+
+body
+{
+    margin-top:30px;
+    margin-left:0px;
+    margin-right:0px;
+
+}
+
+
+#word-time-h2
+{
+    margin-top:300px;
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#graph-area svg {
+    margin:auto;
+    display:inherit;
+}
+
+
+@media screen and (min-width: 768px) {
+    table {
+        margin-top:75px;
+    }
+}
+
+.circle {
+    fill: none;
+    opacity: 1;
+}
+
+.arc {
+    stroke: "white";
+    stroke-width: 2px;
+}
+
+.money-cell {
+    text-align: right;
+}
+
+#leg1 { background-color: #66c2a5; }
+#leg2 { background-color: #fc8d62; }
+#leg3 { background-color: #8da0cb; }
+#leg4 { background-color: #e78ac3; }
+#leg5 { background-color: #a6d854; }
+#avLeg { background-color: grey; }

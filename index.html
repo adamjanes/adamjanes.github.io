@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Pie Gets Bigger</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Year: <span id="year"></span></h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div id="graph-area"></div>
+            </div>
+            <div class="col-md-5">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Income Bracket</th>
+                            <th>Household Income (2015 dollars)</th>
+                        </tr>
+                        <tr>
+                            <td id="leg5"></td>
+                            <td>Highest 20%</td>
+                            <td class="money-cell"><span id="fig5"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="leg4"></td>
+                            <td>Second-Highest 20%</td>
+                            <td class="money-cell"><span id="fig4"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="leg3"></td>
+                            <td>Middle 20%</td>
+                            <td class="money-cell"><span id="fig3"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="leg2"></td>
+                            <td>Second-Lowest 20%</td>
+                            <td class="money-cell"><span id="fig2"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="leg1"></td>
+                            <td>Lowest 20%</td>
+                            <td class="money-cell"><span id="fig1"></span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="avLeg"></td>
+                            <th>Average</th>
+                            <th class="money-cell"><span id="avFig"></span></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JS libraries -->
+    <script src="js/d3.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/jeezy/lib/jeezy.min.js"></script>
+
+
+
+    <!-- Our own JS code -->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
